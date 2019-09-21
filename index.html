@@ -7,16 +7,57 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href=node_modules\bootstrap\compiler\bootstrap.css>
+    <link rel="stylesheet" href="node_modules\bootstrap\compiler\style.css">
 
-    <title>Olá, mundo!</title>
+    <title>Site example</title>
   </head>
   <body>
-    <h1>Olá, mundo!</h1>
-    <button class="btn btn-primary">Teste de botão</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+          <a class="navbar-brand h1 mb-0" href="#">MyLogo</a>
+          <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Depositions</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contacts</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mr-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Facebook</a>
+                  <a class="dropdown-item" href="#">Twitter</a>
+                  <a class="dropdown-item" href="#">Instagram</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline">
+              <input class="form-control mr-2" type="search" placeholder="Search...">
+              <button class="btn btn-dark" type="submit">Ok</button>
+            </form>
+          </div>
+      </div>
+    </nav>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="node_modules\jquery\dist\jquery.js"></script>
-    <script type="javascript" src="node_modules\popper.js\dist\popper.js"></script>
+    <script type="javascript" src="node_modules\popper.js\dist\umd\popper.js"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
   </body>
 </html>
